@@ -3,7 +3,7 @@ import uuid
 from datetime import datetime
 
 class Chat:
-  def __init__(self) -> None:
+  def __init__(self):
     self.chat_id = uuid.uuid4()
     self.memory = []
 
