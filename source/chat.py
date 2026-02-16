@@ -31,3 +31,10 @@ class Chat:
     except (FileNotFoundError, json.JSONDecodeError):
       self.memory = []
         
+  def get_last_subject(self):
+    for entry in reversed(self.memory):
+        words = entry["message"].lower().split()
+        for word in words:
+            if word in self.knowledge:
+                return word
+    return None
