@@ -1,0 +1,9 @@
+{
+  "topic": "Mathematics",
+  "definition": "Mathematics is the study and application of fundamental mathematical concepts and principles to solve real-world problems.",
+  "overview": "Mathematics consists of the branches such as Arithmetic, Algebra, Geometry, Calculus, Statistics, and Probability. In modern mathematics, it's split into two categories: Pure Mathematics and Applied Mathematics. Pure Mathematics explores abstract concepts for their own sake, focused on theories, proofs, and logical structures. Applied Mathematics uses mathematical methods to solve real-world problems in fields like science, engineering, finance, and technology.",
+  "history": "The origins of algebra date back to the ancient Babylonians and Egyptians, who used algebraic methods to solve linear and quadratic equations. The Greek mathematician Diophantus, often called the 'father of algebra', contributed significantly with his work Arithmetica. The word 'algebra' comes from the Arabic al-jabr, from the title of the book by Muhammad ibn Musa al-Khwarizmi, Hisab al-jabr w'al-muqabala, which introduced systematic algebraic methods to Europe. During the Islamic Golden Age, scholars like Al-Khwarizmi advanced algebra. In the Renaissance, European mathematicians like François Viète and René Descartes developed symbolic algebra. The 19th century saw the rise of abstract algebra with contributions from Évariste Galois and Niels Henrik Abel."
+  "impact": "Mathematics powers the technological advancements and is the backbone of Artificial Intelligence, web security (cryptography), engineering, etc.",
+  "related_topics": ["algebra","geometry","calculus","statistics","probability","computer science","number theory"],
+  "source_urls": "https://en.wikipedia.org/wiki/Mathematics"
+}
