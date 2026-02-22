@@ -1,6 +1,7 @@
 import math
 import random
 import latexify
+import re
 
 class Calculator:
   def __init__(self):
@@ -201,3 +202,45 @@ class Calculator:
       degrees = args[0]
       radians = math.radians(degrees)
       return math.tan(radians)
+      
+  def combine_like_terms(expression):
+    tokens = re.findall(r"([+-]?\s*\d*[a-zA-Z]*)", expression)
+    combined = {}
+
+    for token in tokens:
+        token = token.replace(" ", "")
+        if not token: 
+          continue
+
+        match = re.search(r"([a-zA-Z]+)", token)
+        if match:
+            var = match.group(1)
+            coeff_str = token.replace(var, "")
+        else:
+            var = ""
+            coeff_str = token
+
+        if coeff_str in ["", "+"]: coeff = 1
+        elif coeff_str == "-": coeff = -1
+        else: coeff = int(coeff_str)
+
+        combined[var] = combined.get(var, 0) + coeff
+
+    parts = []
+    for var in sorted(combined.keys(), key=lambda x: (x == "", x)):
+        val = combined[var]
+        if val == 0: continue
+
+        prefix = " + " if val > 0 and parts else ""
+        if val < 0:
+            prefix = " - " if parts else "-"
+            val = abs(val)
+
+        if var == "":
+            parts.append(f"{prefix}{val}")
+        elif val == 1:
+            parts.append(f"{prefix}{var}")
+        else:
+            parts.append(f"{prefix}{val}{var}")
+
+    return "".join(parts) or "0"
