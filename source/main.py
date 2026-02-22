@@ -2,6 +2,7 @@ import pygame
 import random
 from button import Button
 from text_box import Text_box
+from bubble import Bubble
 
 pygame.init()
 screen = pygame.display.set_mode((800, 600))
@@ -15,6 +16,7 @@ greetings = [
    "How can I help with?",
    "Hello! How can I assist you today?"
 ]
+chat_history = []
 sidebar_width = 0 
 sidebar_target_width = 0 
 sidebar_speed = 10
@@ -56,11 +58,17 @@ def wrap_text(text, font, max_width):
    
 # button functionality
 def sendPrompt():
-  global state,txt_input
-  print("User typed:", txt_input.text) 
-  txt_input.text = "" # clear after sending
+  global state, txt_input, chat_history
+
+  user_text = txt_input.text.strip()
+  if not user_text:
+    return
+
+  print("User typed:", user_text)
+  chat_history.append(Bubble(user_text, small_font, role="user"))
+  chat_history.append(Bubble("I'm Numa. I heard you 👀", small_font, role="ai"))
+  txt_input.text = ""
   state = "chat"
-  print("Prompt sent!")
   
 def back():
   global state
@@ -134,10 +142,14 @@ while running:
       screen.blit(line_surf, (start_x, start_y + (i * line_h)))
       
   elif state == "chat": 
-    back_btn.draw(screen)
+    if sidebar.width == 130:
+      back_btn.draw(screen)
     pygame.draw.rect(screen, gray, prompt_bar, border_radius=20) 
     txt_input.draw(screen) 
     send_btn.draw(screen) 
+    y = 100
+    for bubble in chat_history:
+      y += bubble.draw(screen, y, sidebar_width) 
     
   pygame.display.flip()
   clock.tick(60)
