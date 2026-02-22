@@ -15,6 +15,9 @@ greetings = [
    "How can I help with?",
    "Hello! How can I assist you today?"
 ]
+sidebar_width = 0 
+sidebar_target_width = 0 
+sidebar_speed = 10
 
 # text
 pygame.font.init()
@@ -25,7 +28,8 @@ small_font = pygame.font.SysFont("segoeui", 18)
 # colors
 white = (255, 255, 255)
 gray = (128, 128, 128)
-dark_gray = ((169, 169, 169))
+light_gray = (181, 181, 181)
+dark_gray = (169, 169, 169)
 blue = (0, 0, 255)
 black = (0, 0, 0)
 
@@ -62,6 +66,13 @@ def back():
   global state
   if state == "chat":
     state = "home"
+    
+def toggle_sidebar(): 
+  global sidebar_target_width 
+  if sidebar_target_width == 0: 
+    sidebar_target_width = 130
+  else: 
+    sidebar_target_width = 0 
   
 # text
 greeting_str = chooseGreeting() 
@@ -70,7 +81,8 @@ rendered_greeting_surfaces = [big_font.render(line, True, white) for line in wra
 
 # buttons
 send_btn = Button(642, 480, 70, 70, "↑", sendPrompt)
-back_btn = Button(20,20,70,70,"<",back)
+back_btn = Button(20,160,70,70,"<--",back)
+open_sidebar = Button(35, 50,50,50,">",toggle_sidebar)
 
 # rects
 bg_border = pygame.Rect(0, 0, 800, 200)
@@ -78,6 +90,7 @@ bg = pygame.Rect(0, 185, 800, 415)
 logo = pygame.Rect(35, 50, 50, 50)
 prompt_bar = pygame.Rect(220, 480, 400, 70)
 txt_input = Text_box(220, 480, 400, 70)
+sidebar = pygame.Rect(0,0,0,600)
 
 while running:
   for event in pygame.event.get():
@@ -86,25 +99,46 @@ while running:
 
     send_btn.handle_event(event)
     txt_input.handle_event(event)
-     
     if state == "chat":
       back_btn.handle_event(event)
-       
+    mouse_pos = pygame.mouse.get_pos()
+    if event.type == pygame.MOUSEBUTTONDOWN:
+      if logo.collidepoint(event.pos):
+        open_sidebar.handle_event(event)
+        
+  if sidebar_width < sidebar_target_width: 
+    sidebar_width += sidebar_speed 
+    if sidebar_width > sidebar_target_width: 
+      sidebar_width = sidebar_target_width 
+  elif sidebar_width > sidebar_target_width: 
+    sidebar_width -= sidebar_speed 
+    if sidebar_width < sidebar_target_width: 
+      sidebar_width = sidebar_target_width 
+  sidebar.width = sidebar_width
+            
   screen.fill(gray)
   if state == "home":
-    pygame.draw.rect(screen, gray, bg_border, border_radius=20)
     pygame.draw.rect(screen, dark_gray, bg)
-    pygame.draw.rect(screen, dark_gray, logo)
+    pygame.draw.rect(screen, gray, bg_border)
+    
+  pygame.draw.rect(screen, light_gray, sidebar)
+  pygame.draw.rect(screen, dark_gray, logo)
+
+  if state == "home":
     pygame.draw.rect(screen, gray, prompt_bar, border_radius=20)
     txt_input.draw(screen)
     send_btn.draw(screen)
-    start_x, start_y = 215, 300
+    start_x, start_y = 215, 325
     line_h = big_font.get_linesize()
     for i, line_surf in enumerate(rendered_greeting_surfaces):
       screen.blit(line_surf, (start_x, start_y + (i * line_h)))
       
-  elif state == "chat":
+  elif state == "chat": 
     back_btn.draw(screen)
+    pygame.draw.rect(screen, gray, prompt_bar, border_radius=20) 
+    txt_input.draw(screen) 
+    send_btn.draw(screen) 
+    
   pygame.display.flip()
   clock.tick(60)
 pygame.quit()
