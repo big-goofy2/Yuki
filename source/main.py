@@ -55,13 +55,14 @@ def sendPrompt():
   global state,txt_input
   print("User typed:", txt_input.text) 
   txt_input.text = "" # clear after sending
+  state = "chat"
   print("Prompt sent!")
   
-def back_action():
+def back():
   global state
-  if state in ["worker shop", "hardware shop"]:
-    state = "main"
-    
+  if state == "chat":
+    state = "home"
+  
 # text
 greeting_str = chooseGreeting() 
 wrapped_lines = wrap_text(greeting_str, big_font, 500) 
@@ -69,6 +70,7 @@ rendered_greeting_surfaces = [big_font.render(line, True, white) for line in wra
 
 # buttons
 send_btn = Button(642, 480, 70, 70, "↑", sendPrompt)
+back_btn = Button(20,20,70,70,"<",back)
 
 # rects
 bg_border = pygame.Rect(0, 0, 800, 200)
@@ -84,7 +86,10 @@ while running:
 
     send_btn.handle_event(event)
     txt_input.handle_event(event)
-    
+     
+    if state == "chat":
+      back_btn.handle_event(event)
+       
   screen.fill(gray)
   if state == "home":
     pygame.draw.rect(screen, gray, bg_border, border_radius=20)
@@ -97,7 +102,9 @@ while running:
     line_h = big_font.get_linesize()
     for i, line_surf in enumerate(rendered_greeting_surfaces):
       screen.blit(line_surf, (start_x, start_y + (i * line_h)))
-    
+      
+  elif state == "chat":
+    back_btn.draw(screen)
   pygame.display.flip()
   clock.tick(60)
 pygame.quit()
