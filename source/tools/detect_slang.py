@@ -25,5 +25,5 @@ def translate_slang(text, slang_dict):
 def process_input(user_input, slang_dict, vocab):
     expanded_text = translate_slang(user_input, slang_dict)
     words = expanded_text.split()
-    corrected_words = [correct_word_from_scratch(w, vocab) for w in words]
+    corrected_words = [correct_word(w, vocab) for w in words]
     return " ".join(corrected_words)
