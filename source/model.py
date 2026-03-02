@@ -1,6 +1,6 @@
 class Model:
-    def __init__(self):
-        self.model = "Numa-1"
+    def __init__(self,name):
+        self.model = name
         self.memory = []
         self.knowledge = {}
     
