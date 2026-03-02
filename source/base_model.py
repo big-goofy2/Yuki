@@ -1,7 +1,6 @@
 class BaseModel:
   def __init__(self,memory):
-    self.name = name
-    self.model = model
+    self.model = "Numa-1"
     self.memory = memory
     self.intents = {
       "research": ["what is", "who is", "explain", "how", "why","when"],
