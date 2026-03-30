@@ -1,0 +1,587 @@
+[
+  {
+    "feeling": "Happy",
+    "category": "Positive",
+    "intensity": 4
+  },
+  {
+    "feeling": "Playful",
+    "category": "Positive",
+    "intensity": 3
+  },
+  {
+    "feeling": "Aroused",
+    "category": "Positive",
+    "intensity": 4
+  },
+  {
+    "feeling": "Cheeky",
+    "category": "Positive",
+    "intensity": 2
+  },
+  {
+    "feeling": "Content",
+    "category": "Positive",
+    "intensity": 3
+  },
+  {
+    "feeling": "Free",
+    "category": "Positive",
+    "intensity": 4
+  },
+  {
+    "feeling": "Joyful",
+    "category": "Positive",
+    "intensity": 5
+  },
+  {
+    "feeling": "Interested",
+    "category": "Positive",
+    "intensity": 3
+  },
+  {
+    "feeling": "Curious",
+    "category": "Positive",
+    "intensity": 3
+  },
+  {
+    "feeling": "Inquisitive",
+    "category": "Positive",
+    "intensity": 4
+  },
+  {
+    "feeling": "Proud",
+    "category": "Positive",
+    "intensity": 4
+  },
+  {
+    "feeling": "Successful",
+    "category": "Positive",
+    "intensity": 5
+  },
+  {
+    "feeling": "Confident",
+    "category": "Positive",
+    "intensity": 4
+  },
+  {
+    "feeling": "Accepted",
+    "category": "Positive",
+    "intensity": 4
+  },
+  {
+    "feeling": "Respected",
+    "category": "Positive",
+    "intensity": 4
+  },
+  {
+    "feeling": "Valued",
+    "category": "Positive",
+    "intensity": 4
+  },
+  {
+    "feeling": "Powerful",
+    "category": "Positive",
+    "intensity": 5
+  },
+  {
+    "feeling": "Courageous",
+    "category": "Positive",
+    "intensity": 5
+  },
+  {
+    "feeling": "Creative",
+    "category": "Positive",
+    "intensity": 4
+  },
+  {
+    "feeling": "Peaceful",
+    "category": "Positive",
+    "intensity": 3
+  },
+  {
+    "feeling": "Loving",
+    "category": "Positive",
+    "intensity": 5
+  },
+  {
+    "feeling": "Thankful",
+    "category": "Positive",
+    "intensity": 4
+  },
+  {
+    "feeling": "Trusting",
+    "category": "Positive",
+    "intensity": 4
+  },
+  {
+    "feeling": "Sensitive",
+    "category": "Positive",
+    "intensity": 3
+  },
+  {
+    "feeling": "Intimate",
+    "category": "Positive",
+    "intensity": 5
+  },
+  {
+    "feeling": "Optimistic",
+    "category": "Positive",
+    "intensity": 4
+  },
+  {
+    "feeling": "Hopeful",
+    "category": "Positive",
+    "intensity": 4
+  },
+  {
+    "feeling": "Inspired",
+    "category": "Positive",
+    "intensity": 5
+  },
+  {
+    "feeling": "Sad",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Lonely",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Isolated",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Abandoned",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Vulnerable",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Victimized",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Fragile",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Despair",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Grieving",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Powerless",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Guilty",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Ashamed",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Remorseful",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Depressed",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Empty",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Inferior",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Hurt",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Embarrassed",
+    "category": "Negative",
+    "intensity": 3
+  },
+  {
+    "feeling": "Disappointed",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Angry",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Let down",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Betrayed",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Resentful",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Humiliated",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Disrespected",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Ridiculed",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Bitter",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Indignant",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Violated",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Mad",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Furious",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Jealous",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Aggressive",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Provoked",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Hostile",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Frustrated",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Infuriated",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Annoyed",
+    "category": "Negative",
+    "intensity": 3
+  },
+  {
+    "feeling": "Distant",
+    "category": "Negative",
+    "intensity": 3
+  },
+  {
+    "feeling": "Withdrawn",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Numb",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Critical",
+    "category": "Negative",
+    "intensity": 3
+  },
+  {
+    "feeling": "Skeptical",
+    "category": "Negative",
+    "intensity": 3
+  },
+  {
+    "feeling": "Dismissive",
+    "category": "Negative",
+    "intensity": 3
+  },
+  {
+    "feeling": "Fearful",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Scared",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Helpless",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Frightened",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Anxious",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Overwhelmed",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Worried",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Insecure",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Inadequate",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Inferior",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Weak",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Worthless",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Insignificant",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Rejected",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Excluded",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Persecuted",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Threatened",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Nervous",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Exposed",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Bad",
+    "category": "Negative",
+    "intensity": 3
+  },
+  {
+    "feeling": "Bored",
+    "category": "Negative",
+    "intensity": 3
+  },
+  {
+    "feeling": "Apathetic",
+    "category": "Negative",
+    "intensity": 3
+  },
+  {
+    "feeling": "Indifferent",
+    "category": "Neutral",
+    "intensity": 2
+  },
+  {
+    "feeling": "Busy",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Pressured",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Rushed",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Stressed",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Overwhelmed",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Out of control",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Tired",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Sleepy",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Unfocused",
+    "category": "Negative",
+    "intensity": 3
+  },
+  {
+    "feeling": "Disgust",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Disapproving",
+    "category": "Negative",
+    "intensity": 3
+  },
+  {
+    "feeling": "Judgmental",
+    "category": "Negative",
+    "intensity": 3
+  },
+  {
+    "feeling": "Embarrassed",
+    "category": "Negative",
+    "intensity": 3
+  },
+  {
+    "feeling": "Disappointed",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Appalled",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Revolted",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Awful",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Nauseated",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Detestable",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Repelled",
+    "category": "Negative",
+    "intensity": 4
+  },
+  {
+    "feeling": "Horrified",
+    "category": "Negative",
+    "intensity": 5
+  },
+  {
+    "feeling": "Hesitant",
+    "category": "Negative",
+    "intensity": 3
+  }
+]
