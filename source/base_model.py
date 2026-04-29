@@ -5,3 +5,8 @@ class BaseModel:
     self.model = "Numa-1"
     self.memory = Memory()
     self.memory.load()
+    self.nicknames = []
+    
+  def add_nickname(self,nickname):
+    self.nicknames.append(nickname)
+    return self.nicknames
