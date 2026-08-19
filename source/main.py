@@ -17,6 +17,7 @@ greetings = [
    "How can I help with?",
    "Hello! How can I assist you today?"
 ]
+{"unk_token": "[UNK]", "sep_token": "[SEP]", "pad_token": "[PAD]", "cls_token": "[CLS]", "mask_token": "[MASK]"}
 chat_history = []
 sidebar_width = 0 
 sidebar_target_width = 0 
