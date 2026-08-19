@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yuki landing page</title>
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: lightgray;
+    }
+
+    .sidebar{
+            background-color: #001B3A;
+            display: inline-block;
+            width: 165px;
+            padding: 20px;
+            height: 100vh;
+            transform: translateX(-105%);
+            transition: transform 0.3s ease; 
+    }
+        
+    .sidebar.active-sidebar{
+        transform: translateX(0); 
+    }
+
+    .lst {
+            list-style-type: none;
+            padding: 0px;
+    }
+        
+    .content {
+           color: #8D99AE;
+           display: block;
+           font-size: 20px;
+    }
+        
+    .lst a {
+           text-decoration: none;
+    }
+        
+    .content:hover {
+           background-color: #00336D;
+           border-radius: 5px;
+    }
+        
+    .button{
+            position: absolute;
+            top:20px;
+            left:5px;
+            background-color: #003B8E;
+            padding: 7px 7px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transform: translateX(0px);
+            transition: transform 0.3s ease; 
+    }
+        
+    .button.active-sidebar {
+            transform: translateX(+125px)
+    }
+        
+    .button:hover{
+            background-color: #00297B;
+    }
+        
+    .disclaimer-banner {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          color: gray;
+          text-align: center;
+          padding: 60px 20px;
+          font-size: 0.9rem;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -320px;
+    }
+    .text-field{
+            background: #1e2227;
+            border-radius: 20px;
+            color: white;
+            position: absolute;
+            width: 100%;
+            max-width: 800px;
+            height: 50px;
+            border: 3.5px solid #181a1f;
+            text-indent: 20px;
+    }
+    .prompt-send{
+        position: absolute;
+        background-color: #003B8E;
+        padding: 8px 8px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        left: 72%;
+    }
+    .prompt-send:hover{
+        background-color: #00297B;
+    }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <strong style="font-size: 25px; color:#8D99AE">
+            Yuki
+        </strong>
+        <ul class="lst">
+            <li>
+                <a href="settings.html" class="content">
+                    Settings
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+    <input type="text" class="text-field" placeholder="Type a message...">
+    <button class="prompt-send">
+        click me
+    </button>
+    </div>
+    <h1 style="text-align: center; margin-top: -200px;"><strong style="font-size:50px;">
+        Hello World!
+    </strong>
+    </h1>
+    <div class="disclaimer-banner">
+      <p><strong>Notice:</strong> Yuki makes mistakes. Please fact-check responses.
+    </div>
+    
+    <button class="button">
+            Click Me!
+    </button>
+    
+    <script>
+        const btn = document.querySelector('.button');
+        const sidbr = document.querySelector('.sidebar'); // sidbr = sidebar
+    
+        function interact(){
+            sidbr.classList.toggle('active-sidebar')
+            btn.classList.toggle('active-sidebar')
+        }
+        btn.addEventListener('click', interact);
+        
+    </script>
+</body>
+</html>
