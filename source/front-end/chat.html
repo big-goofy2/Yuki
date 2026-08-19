@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yuki settings test</title>
+    <style>
+      .sidebar {
+        background-color: #001B3A;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 165px;
+        padding: 20px;
+        min-height: 100vh;
+      }
+
+      .content {
+        color: #8D99AE;
+        display: block;
+        font-size: 20px;
+      }
+
+      .content:hover {
+        background-color: #00336D;
+        border-radius: 5px;
+      }
+
+      .lst {
+        list-style-type: none;
+        padding: 0px;
+      }
+
+      .lst a {
+        text-decoration: none;
+      }
+
+      .settings-section {
+        background-color: #ffffff;
+        border: 1px solid #e1e4e8;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 25px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        position: fixed;
+        left: 260px;
+        top: 80px;
+      }
+
+      .btn-save {
+        background-color: #001B3A;
+        color: #ffffff;
+        border: none;
+        padding: 12px 25px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        position: fixed;
+        width: fit-content;
+        bottom: 0;
+        left: 270px;
+      }
+
+      .btn-save:hover {
+        background-color: #00336D;
+      }
+
+      .frm {
+        background-color: transparent;
+        border-radius: 5px;
+        color: black;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <strong style="font-size: 25px; color:#8D99AE"> Title here </strong>
+      <ul class="lst">
+        <li>
+          <a href="#home" class="content"> home </a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <button class="btn-save"> Save Changes </button>
+    </div>
+    <div class="settings-section">
+      <h2>Default Model</h2>
+      <select class="frm">
+        <option value="yuki-standard"> Yuki Standard (Fast & Balanced) </option>
+        <option value="yuki-pro"> Yuki Pro (Complex Reasoning & Coding) </option>
+        <option value="yuki-flash"> Yuki Flash (Lightweight & Instantaneous) </option>
+      </select>
+    </div>
+    <b>
+      <h1 style="position:fixed; left:260px">General settings</h1>
+    </b>
+  </body>
+</html>
+</html>
